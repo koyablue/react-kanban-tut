@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+// Removed StrictMode
+// react-beautiful-dnd tends to crash with StrictMode. There's an open issue about this problem
+
+ReactDOM.createRoot(document.getElementById('root')!).render(<App />)
