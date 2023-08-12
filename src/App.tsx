@@ -40,7 +40,11 @@ function App() {
     if (!destination) return
 
     const items = Array.from(todo)
+
     const [newOrder] = items.splice(source.index, 1)
+    // const newOrder = items.splice(source.index, 1)[0]
+    console.log("newOrder:", newOrder)
+
     items.splice(destination.index, 0, newOrder)
 
     setTodo(items)
